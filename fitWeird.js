@@ -36,14 +36,15 @@ var setupFitWeird = function(){
   if ( !document.getElementById('fitweird-width-px') ) {
     var newDiv = document.createElement('div');
     var newContent = '<span id=fitweird-width-px></span>px &times; <span id=fitweird-height-px></span>px ';
-    newContent += ':: <span id=fitweird-width-em></span>em &times; <span id=fitweird-height-em></span>em';
+    newContent += '&#160; <span id=fitweird-width-em></span>em &times; <span id=fitweird-height-em></span>em';
     newDiv.style.position = 'fixed';
     newDiv.style.bottom = '0';
-    newDiv.style.right = '0';
-    newDiv.style.backgroundColor = 'rgba(58, 58, 58, 0.8)';
-    newDiv.style.padding = '0.4em 1em';
-    newDiv.style.color = '#00CC00';
-    newDiv.style.fontFamily = 'monospace';
+    newDiv.style.left = '0';
+    newDiv.style.backgroundColor = 'rgba(235, 235, 235, 0.8)';
+    newDiv.style.padding = '0.5em';
+    newDiv.style.color = '#3e3e3e';
+    newDiv.style.fontFamily = 'sans-serif';
+    newDiv.style.fontSize = '18px';
     newDiv.style.zIndex = '9999';
     newDiv.innerHTML = newContent;
     document.body.appendChild(newDiv);
